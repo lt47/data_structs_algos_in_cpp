@@ -1,0 +1,22 @@
+Reinforcement
+--------------
+R-1.1) (c) and (d). (c) begins with an underscore which while not forbidden syntatically in CPP, it is ill-advised because variables that begin with an 
+underscore are reserved for use by the programming language and operating system. (d) because dollar signs are not allowed in variable names. 
+
+R-1.2) findSmallestAndLargestIntegers(){
+        smallestNumber;
+        largestNumber;
+        for(i in Array){
+            if i = 0 {
+                smallestNumber = Array[i];
+                largestNumber = Array[i];
+            }
+            else if Array[i] <= smallestNumber{
+                smallestNumber = Array[i];
+            } 
+            else if Array[i] >= largestNumber{
+                largestNumber = Array[i];
+            }
+
+        }
+    }
