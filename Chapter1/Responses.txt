@@ -20,3 +20,9 @@ R-1.2) findSmallestAndLargestIntegers(){
 
         }
     }
+
+R-1.5) ((y + (2 * (z ++))) < (3 - (w / 5)))
+
+R-1.6) 
+double* dp[10]
+for (int i = 0; i < 10; i++) dp[i] = 0.0;
