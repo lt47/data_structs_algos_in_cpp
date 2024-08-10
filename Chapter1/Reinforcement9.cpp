@@ -1,5 +1,15 @@
 #include <iostream>
+/*Reference for understanding int** - https://stackoverflow.com/questions/1534324/what-does-int-array-create */
+/*
+Astericks on the all comment lines besides the first and last have special meaning. 
 
+**arr addresses to arr[0][0]
+
+*((*arr)+1) addresses to arr[0][1]
+
+*(*(arr+1)+1) addresses to arr[1][1]
+
+*/
 void printArray(int** A, int m, int n){
     for (int i = 0; i < m; i++){
         for (int j = 0; j < n; j++){
