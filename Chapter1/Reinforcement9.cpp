@@ -32,7 +32,7 @@ void fill2DArray(int**& twoDArray, int numberOfRows, int numberOfColumns){
 
 void create2DArray(int**& twoDArray, int numberOfRows, int numberOfColumns){
     /* why is it necessary to dynamically allocate memory for a single integer variable here? Why wont int* [rows] suffice. */
-    // Maybe because int* [rows] doesnt reference anything that exists. 
+    // Maybe because int* [rows] doesnt reference anything that exists.  So new int* represents the first pointer (*) for twoDArray
     twoDArray = new int*[numberOfRows];
     for (int i = 0; i < numberOfRows; i++){
         twoDArray[i] = new int[numberOfColumns];
