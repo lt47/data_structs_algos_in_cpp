@@ -47,5 +47,6 @@ int main(){
     create2DArray(twoDArray, numberOfRows, numberOfColumns);
     fill2DArray(twoDArray, numberOfRows, numberOfColumns);
     printArray(twoDArray, numberOfRows, numberOfColumns);
+    delete twoDArray;
     
 }
