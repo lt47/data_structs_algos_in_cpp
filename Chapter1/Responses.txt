@@ -26,3 +26,6 @@ R-1.5) ((y + (2 * (z ++))) < (3 - (w / 5)))
 R-1.6) 
 double* dp[10]
 for (int i = 0; i < 10; i++) dp[i] = 0.0;
+
+R-1.10) The difference in behavior between the function that increments a variable and prints its value is that the first does this without modification to the passed variable argument. 
+While the second has the variable arg passed as a reference and its value is consequently altered. 
