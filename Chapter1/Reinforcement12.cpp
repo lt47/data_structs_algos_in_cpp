@@ -10,12 +10,14 @@ CreditCard::CreditCard(const string& no, const string& nm, int lim, double bal){
 }
 
 bool CreditCard::chargeIt(double price){
-    if (price + balance > double(limit)){ return false;}
+    if (price < 0.0){return false;}
+    else if (price + balance > double(limit)){ return false;}
     balance += price;
     return true;
 }
 
 void CreditCard::makePayment(double payment){
+    if (payment < 0.0){return;}
     balance -= payment;
 }
 
