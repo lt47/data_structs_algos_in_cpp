@@ -42,7 +42,9 @@ void CreditCard::makePayment(double payment){
     time(&currentDateTime);
     // this ensures that the payment is always positive. No action is taken otherwise.
     if (payment < 0.0){return;}
-    // Check if the payment was made after the due date.
+    /*Check if the payment was made after the due date. In the real world, there would also be a check
+    * to determine if the minimum payment has already been made before penalizing the account holder. 
+    * This can be considered a future enhancement when this is tested. */ 
     else if (currentDateTime > getDueDate()){
         balance -= payment;
         // Charge late payment fee per Reinforcement 14. 
