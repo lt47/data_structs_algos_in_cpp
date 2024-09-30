@@ -13,7 +13,7 @@ class CreditCard{
         std::string getName() const {return name;}
         void setName(const std::string& nm){name = nm;}
         /* RE: Reinforcement 13. Lets assume a credit card interest rate of 5.99%*/
-        double getBalance() const {return balance * interestRate;}
+        double getBalance() const {return ((balance * interestRate) + balance);}
         void setBalance(double bal){balance = bal;}
         int getLimit() const {return limit;}
         void setLimit(int lim){limit = lim;}

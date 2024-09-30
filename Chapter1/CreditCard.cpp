@@ -49,6 +49,7 @@ void CreditCard::makePayment(double payment){
         balance -= payment;
         // Charge late payment fee per Reinforcement 14. 
         balance += getLateFee();
+        return;
     }
     balance -= payment;
 }

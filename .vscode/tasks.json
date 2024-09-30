@@ -8,6 +8,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "${fileDirname}/CreditCard.cpp",
+                "-lstdc++",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -31,6 +33,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "${fileDirname}/CreditCard.cpp",
+                "-lstdc++",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
