@@ -24,6 +24,6 @@ class AllKinds{
 };
 
 
-// Print All Kinds information. 
+// Print All Kinds Class information. 
 std::ostream& operator<<(std::ostream& out, const AllKinds& ak);
 #endif
