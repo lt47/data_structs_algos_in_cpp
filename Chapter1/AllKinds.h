@@ -7,16 +7,21 @@
 //Reinforcement 17. 
 class AllKinds{
     public:
-        AllKinds(int intValue=1, long longValue=1, float floatValue=1.0);
-        int getIntValue() {return intValue;}
+        AllKinds();
+        AllKinds(int intVal, long longVal, float floatVal);
+        int getIntValue() const {return intValue;}
         void setIntValue(int intVal){intValue = intVal;}
-        long getLongValue() {return longValue;}
+        long getLongValue() const {return longValue;}
         void setLongValue(long longVal){longValue = longVal;}
-        float getFloatValue() {return floatValue;}
+        float getFloatValue() const {return floatValue;}
         void setFloatValue(float floatVal){floatValue = floatVal;}
 
-        float sumOfEachCombination();
-    
+        /*The number of unique combinations in a set is given by - 2^n - n - 1. 
+        Therefore, there will be 4.*/
+        long intAndLongSum(int intVal, long longVal){return (intVal + longVal);};
+        float longAndFloatSum(long longVal, float floatVal){return (longVal + floatVal);};
+        float floatAndIntSum(float floatVal, int intVal){return (floatVal + intVal);};
+        float intLongAndFloatSum(int intVal, long longVal, float floatVal){return (intVal + longVal + floatVal);};
     private: 
         int intValue;
         long longValue;
