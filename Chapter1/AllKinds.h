@@ -18,10 +18,10 @@ class AllKinds{
 
         /*The number of unique combinations in a set is given by - 2^n - n - 1. 
         Therefore, there will be 4.*/
-        long intAndLongSum(int intVal, long longVal){return (intVal + longVal);};
-        float longAndFloatSum(long longVal, float floatVal){return (longVal + floatVal);};
-        float floatAndIntSum(float floatVal, int intVal){return (floatVal + intVal);};
-        float intLongAndFloatSum(int intVal, long longVal, float floatVal){return (intVal + longVal + floatVal);};
+        long intAndLongSum(){return (intValue + longValue);};
+        float longAndFloatSum(){return (longValue + floatValue);};
+        float floatAndIntSum(){return (floatValue + intValue);};
+        float intLongAndFloatSum(){return (intValue + longValue + floatValue);};
     private: 
         int intValue;
         long longValue;
